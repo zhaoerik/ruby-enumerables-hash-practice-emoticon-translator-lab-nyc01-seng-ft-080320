@@ -34,7 +34,8 @@ def get_japanese_emoticon(path, emoticon)
       # binding.pry
       return emoticon_hash[feeling][:japanese]
     end
-  elsif
-    return "Sorry, that emoticon was not found"
+    if
+      return "Sorry, that emoticon was not found"
+    end
   end
 end
