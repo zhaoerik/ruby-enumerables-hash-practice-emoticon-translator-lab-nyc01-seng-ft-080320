@@ -30,7 +30,7 @@ def get_japanese_emoticon(path, emoticon)
   # binding.pry
   emoticon_hash.each do |feeling, expression|
     # binding.pry
-    if emoticon = emoticon_hash[feeling][:english]
+    if emoticon == emoticon_hash[feeling][:english]
       # binding.pry
       return emoticon_hash[feeling][:japanese]
     end
