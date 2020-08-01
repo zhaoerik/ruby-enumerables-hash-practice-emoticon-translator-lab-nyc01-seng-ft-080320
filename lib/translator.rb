@@ -18,8 +18,8 @@ def get_english_meaning(path, emoticon)
   emoticon_hash = load_library(path)
   emoticon_hash.each do |feeling, expression|
     # binding.pry
-    if emoticon == emoticon_hash[emoticon][:japanese]
-      return emoticon_hash[emoticon][:english]
+    if emoticon == emoticon_hash[feeling][:japanese]
+      return emoticon_hash[feeling][:english]
     end
   end
   return "Sorry, that emoticon was not found"
