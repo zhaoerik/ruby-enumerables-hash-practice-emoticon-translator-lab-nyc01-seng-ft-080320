@@ -33,8 +33,7 @@ def get_japanese_emoticon(path, emoticon)
     if emoticon == emoticon_hash[feeling][:english]
       # binding.pry
       return emoticon_hash[feeling][:japanese]
-    end
-    if emoticon == nil
+    else emoticon == nil
       return "Sorry, that emoticon was not found"
     end
   end
